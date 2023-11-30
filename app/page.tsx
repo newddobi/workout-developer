@@ -1,14 +1,19 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Login() {
+  const router = useRouter();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const loginClickHandler = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Login Clicked", email, password);
+
+    if (email === "qhdqhdekd261@naver.com" && password === "0000") {
+      router.push("/workout");
+    }
   };
 
   return (
