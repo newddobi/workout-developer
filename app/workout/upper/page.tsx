@@ -1,4 +1,5 @@
 "use client";
+import { WorkoutSpeedDial } from "@/components/WorkoutSpeedDial";
 import { Button, Step, Stepper } from "@material-tailwind/react";
 import { useState } from "react";
 
@@ -28,6 +29,7 @@ const Upper = () => {
           Next
         </Button>
       </div>
+      <WorkoutSpeedDial />
     </main>
   );
 };
