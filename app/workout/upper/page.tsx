@@ -1,4 +1,5 @@
 "use client";
+import Panel from "@/components/Panel";
 import { WorkoutSpeedDial } from "@/components/WorkoutSpeedDial";
 import { Button, Step, Stepper } from "@material-tailwind/react";
 import { useState } from "react";
@@ -21,12 +22,13 @@ const Upper = () => {
         <Step onClick={() => setActiveStep(1)}>2</Step>
         <Step onClick={() => setActiveStep(2)}>3</Step>
       </Stepper>
+      <Panel />
       <div className="mt-16 flex justify-between">
         <Button onClick={handlePrev} disabled={isFirstStep}>
-          Prev
+          이전
         </Button>
         <Button onClick={handleNext} disabled={isLastStep}>
-          Next
+          다음
         </Button>
       </div>
       <WorkoutSpeedDial />
