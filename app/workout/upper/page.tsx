@@ -27,11 +27,11 @@ const Upper = () => {
         <Button onClick={handlePrev} disabled={isFirstStep}>
           이전
         </Button>
+        <WorkoutSpeedDial />
         <Button onClick={handleNext} disabled={isLastStep}>
           다음
         </Button>
       </div>
-      <WorkoutSpeedDial />
     </main>
   );
 };
