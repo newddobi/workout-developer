@@ -2,11 +2,11 @@
 import Navigation from "@/components/Navigation";
 import { useRouter } from "next/navigation";
 
-export default function Workout() {
+const Manage = () => {
   const router = useRouter();
 
   const buttonClickHandler = (todayTarget: string) => {
-    router.push(`/workout/${todayTarget}`);
+    router.push(`/manage/${todayTarget}`);
   };
 
   return (
@@ -24,14 +24,10 @@ export default function Workout() {
         >
           하체
         </button>
-        <button
-          className="h-24 border-solid border-2 rounded-md text-lg border-indigo-600"
-          onClick={buttonClickHandler.bind(null, "running")}
-        >
-          러닝
-        </button>
       </div>
       <Navigation />
     </main>
   );
-}
+};
+
+export default Manage;
