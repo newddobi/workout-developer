@@ -56,6 +56,11 @@ const Upper = () => {
           </ListItem>
         </List>
       </Card>
+      <div className="">
+        <IconButton color="blue">
+          <i className="fas fa-heart" />
+        </IconButton>
+      </div>
       <Navigation />
     </main>
   );
