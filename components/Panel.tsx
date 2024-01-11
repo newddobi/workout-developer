@@ -1,5 +1,4 @@
 import { Textarea } from "@material-tailwind/react";
-import { Input } from "@material-tailwind/react";
 import { Checkbox } from "@material-tailwind/react";
 
 const Panel = () => {
@@ -25,7 +24,6 @@ const Panel = () => {
             <div className="flex">
               <div className="w-10 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -35,7 +33,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -45,7 +42,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -66,7 +62,6 @@ const Panel = () => {
             <div className="flex">
               <div className="w-10 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -76,7 +71,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -86,7 +80,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -107,7 +100,6 @@ const Panel = () => {
             <div className="flex">
               <div className="w-10 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -117,7 +109,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -127,7 +118,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -148,7 +138,6 @@ const Panel = () => {
             <div className="flex">
               <div className="w-10 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -158,7 +147,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -168,7 +156,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -189,7 +176,6 @@ const Panel = () => {
             <div className="flex">
               <div className="w-10 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -199,7 +185,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -209,7 +194,6 @@ const Panel = () => {
               </div>
               <div className="w-14 mr-7">
                 <input
-                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
