@@ -1,35 +1,30 @@
-"use client";
 import Navigation from "@/components/Navigation";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Workout() {
-  const router = useRouter();
-
-  const buttonClickHandler = (todayTarget: string) => {
-    router.push(`/workout/${todayTarget}`);
-  };
-
   return (
-    <main className="flex justify-center w-screen h-screen">
-      <div className="flex min-h-full flex-col justify-evenly w-72 px-12 py-12 lg:px-8">
-        <button
-          className="h-24 border-solid border-2 rounded-md text-lg border-indigo-600"
-          onClick={buttonClickHandler.bind(null, "upper")}
-        >
-          상체
-        </button>
-        <button
-          className="h-24 border-solid border-2 rounded-md text-lg border-indigo-600"
-          onClick={buttonClickHandler.bind(null, "lower")}
-        >
-          하체
-        </button>
-        <button
-          className="h-24 border-solid border-2 rounded-md text-lg border-indigo-600"
-          onClick={buttonClickHandler.bind(null, "running")}
-        >
-          러닝
-        </button>
+    <main className="flex items-center justify-center w-screen h-screen">
+      <div className="flex flex-wrap justify-center">
+        <Link href="/workout/upper" className="">
+          <button className="h-32 w-32 border-solid border-2 rounded-md text-lg border-indigo-600 m-5">
+            상체(가슴)
+          </button>
+        </Link>
+        <Link href="/workout/upper" className="">
+          <button className="h-32 w-32 border-solid border-2 rounded-md text-lg border-indigo-600 m-5">
+            상체(등)
+          </button>
+        </Link>
+        <Link href="/workout/lower" className="">
+          <button className="h-32 w-32 border-solid border-2 rounded-md text-lg border-indigo-600 m-5">
+            하체
+          </button>
+        </Link>
+        <Link href="/workout/running" className="">
+          <button className="h-32 w-32 border-solid border-2 rounded-md text-lg border-indigo-600 m-5">
+            러닝
+          </button>
+        </Link>
       </div>
       <Navigation />
     </main>
